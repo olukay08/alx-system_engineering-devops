@@ -1,0 +1,16 @@
+#!/usr/bin/env bash 
+# prints the superstitious numbers: bad luck from China, Japan, Italy in the 4th, 9th and 17th iterations respectively
+a=1
+while [ $a -le 20 ];
+do
+    echo "$a"
+    case "$a" in
+	4) echo "bad luck from China"
+	;;
+	9) echo "bad luck from Japan"
+	;;
+    	17) echo "bad luck from Italy"
+	;;
+    esac
+    ((a++))
+done
